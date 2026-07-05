@@ -217,8 +217,8 @@ def empty_keyboard() -> str:
 def main_keyboard() -> str:
     return keyboard_json(
         [
-            [text_button("/record", "primary")],
-            [text_button("/del_record", "negative")],
+            [text_button("Запись", "primary")],
+            [text_button("Удаление записи", "negative")],
             [text_button("/admin", "secondary")],
         ],
         inline=False,
@@ -397,7 +397,7 @@ def cmd_start(peer_id: int, user_id: int) -> None:
     clear_session(user_id)
     send_message(
         peer_id,
-        "Бот запущен. Используйте /record для записи на Ментальное ГТО.",
+        "Бот запущен. Используйте соответствующую кнопку в меню для записи на Ментальное ГТО.",
         keyboard=main_keyboard(),
     )
 
