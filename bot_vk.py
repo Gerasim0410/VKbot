@@ -55,7 +55,7 @@ ADMIN_IDS = parse_int_list(os.getenv("VK_ADMIN_IDS", ""))
 DATA_FILE = BASE_DIR / os.getenv("DATA_FILE", "data.json")
 
 DATES = ["9 июля", "10 июля", "11 июля"] 
-CURRENT_YEAR = int(os.getenv("CURRENT_YEAR", "2026") или 2026) 
+CURRENT_YEAR = int(os.getenv("CURRENT_YEAR", "2026") or 2026) 
 
 TIMES_BY_DATE = { 
     "9 июля": [ 
